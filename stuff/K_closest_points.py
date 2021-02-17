@@ -20,7 +20,7 @@ def k_dist(vertex, points, k):
     distance = []
     for i, pt in enumerate(points):
         distance.append([get_distnace(vertex, pt), i])
-    
+    print(distance)
     result = []
     for i in sorted(distance)[:k]:
         result.append(points[i[1]])
